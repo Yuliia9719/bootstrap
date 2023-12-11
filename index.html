@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="header bg-info">
+    <!-- header -->
+    <div class="container">
+      <h1 class="py-5 fw-semibold text-white text-center">My Header</h1>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #e8f4ff;">
+      <div class="container">
+
+        <a class="navbar-brand text-uppercase fw-semibold text-primary" href="#">Webpage</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+          aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarID">
+          <!-- left nav -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Articles
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Article 1</a></li>
+                <li><a class="dropdown-item" href="#">Article 2</a></li>
+                <li><a class="dropdown-item" href="#">Article 3</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Interesting facts</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- right nav -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- Button trigger modal -->
+            <li class="nav-item">
+              <a class="nav-link bg-primary rounded text-white" data-bs-toggle="modal"
+                data-bs-target="#registrationModal" href="#">Registration</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Reviews</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <!-- main -->
+    <div class="row">
+      <div class="col-xxl-7 col-xl-8 col-lg-12 py-3">
+        <h1>15 Key Skills Every Full Stack Developer Should have</h1>
+        <h5>Front-end Languages and Frameworks</h5>
+
+        <p><strong>HTML and CSS</strong></p>
+        <p>HTML short of Hypertext markup language governs the appearance of text/images on the screen. It formats
+          the
+          text as
+          headings, paragraphs, pop-ups and so on. It typically consists of tags that give a different meaning to the
+          text in a
+          document structure.</p>
+
+        <p><strong>JavaScript</strong></p>
+        <p>It is a powerful client-side programming language mainly used for enhancing user interaction with the
+          application. It
+          offers several libraries and frameworks like React, Angular, Vue, and JQuery. A full stack developer needs to
+          be
+          proficient in one or more of these tools.</p>
+
+        <h5>Backend Technologies and Frameworks</h5>
+        <ul>
+          <li>JavaScript and its environments like NodeJS and ExpressJS. Node is an open-source, cross-platform runtime
+            environment
+            that allows developers to create server-side tools and JavaScript applications. Knowledge of the basic
+            command line like
+            npm (Node Package Manager) is essential.</li>
+          <li>Java, in particular, was built from the ground up to be run on the server-side. Popular Java frameworks
+            include Spring
+            and Java Server faces.</li>
+          <li>Python is the most popularly used language. It is flexible and easy to use. We use Python frameworks like
+            Django and
+            Flask for backend development. Django is a high-level Python web framework that enables rapid development of
+            websites.
+            It is free and open-source, has a huge and active community of users.</li>
+          <li>C# language is for many the most preferred architecture when it comes to backend programming in Windows
+            environments.</li>
+          <li>Other languages include PHP, Perl, and Ruby.</li>
+        </ul>
+
+        <h5>Database Management Systems</h5>
+        <p>A full-stack developer writes code that is used to perform Relational mapping to fetch data from the
+          database.
+          Some
+          popularly used DBMS are MySQL, SQL SERVER and PostgreSQL, MongoDB, and Oracle Database. A good understanding
+          of their
+          workings is critical.</p>
+
+        <h5>Version Control</h5>
+        <p>Version control systems help manage the project files and keep track of the entire history of the user's
+          things. Popular
+          ones are Git, Github, and Subversion.
+          Git helps manage the project files. It keeps track of the entire history of things that the user is working
+          on. GitHub
+          is a web-based service for version control using Git. The user can look at other people’s code, identify
+          issues or
+          errors, and even propose changes.</p>
+        <!-- Accordion -->
+        <div class="accordion" id="accordionPanelsStayOpen">
+          <h2 class="fw-bold text-primary">Frequently Asked Questions</h2>
+
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                What is a Full-Stack Developer?
+              </button>
+            </h3>
+
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                A Full-Stack Developer is a web developer or engineer who is well-versed in all the layers of an
+                application, such as
+                the front-end, back-end, and database. They possess a good knowledge of the entire web development
+                process, from
+                conception to deployment.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                What Skills Do Full-Stack Developers Need?
+              </button>
+            </h3>
+
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Full-Stack Developers must have a wide range of skills, including proficiency in HTML, CSS, JavaScript,
+                databases,
+                server-side languages such as PHP and Ruby, and more. They should also have the ability to work with a
+                variety of
+                frameworks and technologies.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                What Are the Benefits of Being a Full-Stack Developer?
+              </button>
+            </h3>
+
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Being a Full-Stack Developer provides several benefits, including having a complete understanding of the
+                development
+                process, the ability to create a well-rounded product, and the ability to work on both the front-end and
+                back-end of an
+                application. Additionally, Full-Stack Developers are highly sought after in the tech industry.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour">
+                What Kind of Projects Would a Full-Stack Developer Work On?
+              </button>
+            </h3>
+
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Full-Stack Developers typically work on projects involving the development of web applications,
+                websites, or other
+                software solutions. Projects can range from creating a new website to maintaining an existing one, or
+                developing an
+                application from the ground up.
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <!-- carousel -->
+      <div class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first py-3">
+
+        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="assets/images/img1.jpg" class="d-block w-100" alt="nature">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/img2.jpg" class="d-block w-100" alt="nature">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/img3.jpg" class="d-block w-100" alt="nature">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/img4.jpg" class="d-block w-100" alt="nature">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/img5.jpg" class="d-block w-100" alt="nature">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </div>
+      <!-- placeholder -->
+      <div class="col-xxl-2 col-xl-12 col-lg-6 pt-3">
+        <div class="card">
+          <img src="assets/images/code.jpg" class="card-img-top" alt="code">
+
+          <div class="card-body">
+            <h5 class="card-title text-uppercase">Trending now</h5>
+            <p class="card-text">Top 25 Java Interview Questions and Answers for 2024
+            </p>
+            <a href="#" class="btn btn-primary">Open the link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer bg-success fixed-sm-bottom">
+    <div class="containers">
+      <p class="py-4 text-center fw-bold text-white">@copy right</p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registrationModalLabel">Registration</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-control shadow-sm p-3 mb-1 bg-body-tertiary rounded" type="text" id="name"
+                aria-describedby="name" placeholder="John">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="lastName">Surname</label>
+              <input class="form-control shadow-sm p-3 mb-1 bg-body-tertiary rounded" type="text" id="lastName"
+                aria-describedby="lastName" placeholder="Smith">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="email">Email address</label>
+              <input class="form-control shadow-sm p-3 mb-1 bg-body-tertiary rounded" type="email" id="email"
+                aria-describedby="email" placeholder="test@gmail.com" required>
+              <div class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control shadow-sm p-3 mb-1 bg-body-tertiary rounded" type="password" id="password"
+                  placeholder="password" required>
+              </div>
+
+              <div class="col-lg-6 mb-3">
+                <label class="form-label" for="confirm">Confirm password</label>
+                <input class="form-control shadow-sm p-3 mb-1 bg-body-tertiary rounded" type="password" id="confirm"
+                  placeholder="confirm your password" required>
+              </div>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox">
+              <label class="form-check-label" for="checkbox">Check me out</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
